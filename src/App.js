@@ -5,10 +5,10 @@ import Timer from "./components/Timer.js"
 function App() {
 
   return (
-    <div>
+    <main>
       <GlobalStyles />
       <Timer />
-    </div>
+    </main>
   );
 }
 
