@@ -55,7 +55,7 @@ export const GlobalStyles =  createGlobalStyle`
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 0.5rem;
+        gap: 1.5rem;
     }
 
     .controller-buttons button {
@@ -63,6 +63,76 @@ export const GlobalStyles =  createGlobalStyle`
         border: none;
         color: #eabf9f;
         cursor: pointer;
+    }
+
+    .modal-options {
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem 1rem;
+        width: 22.5rem;
+        height: 17rem;
+        background-color: #1e212d;
+        border: 1px solid #eabf9f;
+        border-radius: 0.5rem;
+        color: #eabf9f;
+        gap: 2rem;
+    }
+
+    .modal-options p {
+        font-size: 0.80rem;
+    }
+    
+    .modal-tittle {
+        font-size: 1.5rem;
+    }
+
+    .options-input {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    .options-input div, .input-long-breaks {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    .input-long-breaks {
+        padding: 0 1rem;
+    }
+
+    .options-input input, .input-long-breaks input {
+        width: 3rem;
+        padding: 0.5rem;
+        background-color: transparent;
+        border: 1px solid;
+        border-radius: 0.25rem;
+        color: #eabf9f;
+    }
+    
+    .close-modal-options {
+        display: flex;
+        justify-content: right;
+        gap: 1rem;
+    }
+    
+    .close-modal-options button {
+        width: 4rem;
+        height: 2rem;
+        background-color: transparent;
+        border: 1px solid;
+        border-radius: 0.25rem;
+        cursor: pointer;
+    }
+
+    .modal-button-cancel {
+        color: #d23131;
+    }
+
+    .modal-button-apply {
+        color: #6ddf44;
     }
 
 `;
